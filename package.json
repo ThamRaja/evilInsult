@@ -1,0 +1,16 @@
+{
+  "name": "insults4free",
+  "version": "1.0.0",
+  "description": "testing for now",
+  "main": "app.js",
+  "scripts": {
+    "start" : "node app.js"
+  },
+  "author": "preetham, chatGPT",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "https": "^1.0.0",
+    "request": "^2.88.2"
+  }
+}

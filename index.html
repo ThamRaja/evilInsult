@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evil Insult Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button id="getInsult">Get Insult</button>
+    <p id="insult"></p>
+    <script>
+      const button = document.getElementById('getInsult');
+      const insultElement = document.getElementById('insult');
+
+      button.addEventListener('click', () => {
+        fetch('/insult')
+          .then((response) => response.text())
+          .then((insult) => {
+            insultElement.textContent = insult;
+          });
+      });
+    </script>
+  </body>
+</html>
